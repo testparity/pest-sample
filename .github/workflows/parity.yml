@@ -28,7 +28,7 @@ jobs:
 
       - name: Run sample tests
         working-directory: code
-        run: ./vendor/bin/pest --colors=never
+        run: ./vendor/bin/pest --configuration phpunit.xml --colors=never
 
       - name: Setup PHP for Parity
         uses: shivammathur/setup-php@v2
